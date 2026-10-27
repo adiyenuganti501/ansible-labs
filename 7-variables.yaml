@@ -1,7 +1,7 @@
 - name: vars from file
   hosts: local
   connection: local
-  vars_file:
+  vars_files:
   - details.yaml
   tasks:
   - name: Details from file
