@@ -1,0 +1,7 @@
+- name: ping the local server
+  hosts: local
+  connection: local
+  tasks: 
+   - name: Print hello Word
+     ansible.builtin.debug:
+      msg: Hello Ansible
