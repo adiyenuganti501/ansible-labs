@@ -1,0 +1,9 @@
+
+---> check complte graph
+ansible-inventory -i inventory.ini  --graph  
+
+---> check frontend host grap view
+ansible-inventory -i inventory.ini --graph  frontend   
+
+---> Run Ansible playbook with username and password
+ansible-playbook -i inventory.ini -e ansible_user=ec2-user -e ansible_password=DevOps321  4-nginx.yaml
