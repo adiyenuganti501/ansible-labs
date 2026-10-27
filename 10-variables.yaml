@@ -5,3 +5,7 @@
   - name: print greeting
     debug:
       msg: "Hello {{ person_name }}"
+
+
+  # command to Run this 
+  # $ ansible-playbook -i inventory.ini 10-variables.yaml  -e person_name=Ira
