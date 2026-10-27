@@ -13,4 +13,4 @@
       tasks:
     - name: Print Username and Password
       debug:
-        msg: The username is {{username}} and password is {{password}} 
+        msg: "The username is {{username}} and password is {{password}} "
