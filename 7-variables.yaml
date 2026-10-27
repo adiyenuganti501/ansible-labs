@@ -6,5 +6,5 @@
   tasks:
   - name: Details from file
     debug:
-      msg: "The{{name}} {{l_name}} is {{age}} years old"
+      msg: "{{name}} {{l_name}} is {{age}} years old"
        
