@@ -1,6 +1,6 @@
 - name: Variables 
   hosts: local
-  connectio: local
+  connection: local
   vars:
     name: Khiranya
     Last_name: Srini
