@@ -1,5 +1,5 @@
 
----> check complte graph
+---> check complte host graph view
 ansible-inventory -i inventory.ini  --graph  
 
 ---> check frontend host grap view

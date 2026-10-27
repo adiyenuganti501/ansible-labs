@@ -1,0 +1,11 @@
+- name: Variables 
+  hosts: local
+  connectio: local
+  vars:
+    name: Khiranya
+    Last_name: Srini
+    age: 1
+  tasks:
+   - name: Print data from vars
+     debug: 
+      msg: "Hi this is {{name}} {{Last_name}} age is {{age}}"
