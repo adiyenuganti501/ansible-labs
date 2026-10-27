@@ -1,0 +1,16 @@
+- name: Vars from Promt
+  hosts: local
+  connection: local
+  vars_promt:
+    - name: username
+      prompt: Please enter username
+      private: false
+
+    - name: password
+      prompt: Please enter passord
+      provate: true
+    
+      tasks:
+      - name: Print Username and Password
+        debug:
+         msg: The username is {{username}} and password is {{password}} 
