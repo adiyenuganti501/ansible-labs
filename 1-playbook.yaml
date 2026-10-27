@@ -1,4 +1,4 @@
--name : ping the server
+-name: ping the server
  hosts: local   # this pings local ansible server
  connection:local  # No cred required 
  tasks:
