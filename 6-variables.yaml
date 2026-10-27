@@ -1,19 +1,17 @@
 - name: Task level vars
   hosts: local
   connection: local
-
   vars:
    name: Khiranya Srini
    age: 1
-
   tasks:
    - name: print age in 2025
-     ansible.builtin.debug:
-       msg: "Age of{{ name }} in 2025 is {{ age }}"
+     debug:
+       msg: "Age of{{name}} in 2025 is {{age}}"
 
    - name: print age in 2026
      vars:
       age: 2
-     ansible.builtin.debug:
-      msg: "Age of {{ namen}} in 2026 is {{ age }}"
+     debug: 
+      msg: "Age of {{name}} in 2026 is {{age}}"
        
