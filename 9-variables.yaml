@@ -1,0 +1,8 @@
+- name: Vars form Inventory
+  hosts: frontend
+  tasks: 
+  - name: print varible from Inventory
+    debug:
+      msg: "Name is {{fname}} {{lname}} and age is {{age}}"
+  
+
