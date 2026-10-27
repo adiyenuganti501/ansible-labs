@@ -8,7 +8,7 @@
 
     - name: password
       prompt: Please enter passord
-      provate: true
+      private: true
     
       tasks:
     - name: Print Username and Password
