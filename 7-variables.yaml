@@ -1,0 +1,10 @@
+- name: vars from file
+  hosts: local
+  connection: local
+  vars_file:
+  - details.yaml
+  tasks:
+  - name: Details from file
+    debug:
+      msg: "The{{name}} {{l_name}} is {{age}} years old"
+       
