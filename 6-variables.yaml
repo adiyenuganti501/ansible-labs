@@ -8,12 +8,12 @@
 
   tasks:
    - name: print age in 2025
-     debug:
+     ansible.builtin.debug:
        msg: "Age of{{ name }} in 2025 is {{ age }}"
 
    - name: print age in 2026
      vars:
       age: 2
-     debug: 
+     ansible.builtin.debug:
       msg: "Age of {{ namen}} in 2026 is {{ age }}"
        
