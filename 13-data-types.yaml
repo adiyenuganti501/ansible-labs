@@ -20,7 +20,7 @@
   - name: Print cource details
     debug:
       msg: |
-        name: "{{cource}} : {{cource | type_debug}}
+        name: "{{cource}} : {{cource | type_debug}}"
         duration: "{{duration}} : {{duration | type_debug}}"
         is live session: "{{is_live_session}} : {{is_live_session | type_debug}}"
         topics are: "{{topics}}: {{topics | type_debug}}"
