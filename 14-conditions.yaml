@@ -1,0 +1,16 @@
+- name: Ansible Conditions
+  hosts: local
+  connection: local
+  vars: 
+   given_num: 10
+  tasks:
+  - name: Is Even
+    debug:
+      msg: Given num {{given_num}}
+    when: given_num %2 == 0 
+
+  - name: Is Odd
+    debug:
+      msg: Given num{{given_num}}
+    when: given_num %2 != 0
+
