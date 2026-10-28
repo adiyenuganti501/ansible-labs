@@ -1,0 +1,24 @@
+- name: Ansible Data Typs
+  hosts: local
+  connection: local
+  vars:
+   cource: "DevOps ith AIOps and DevSecOps on AWS"
+   duration: 4 months
+   is_live_session: true
+   topics: 
+    - linux
+    - shell
+    - ansible
+    - terraform 
+  more_details: 
+      trainer: siva
+      time: 7:15 AM
+  exat_duration_per_topic_in_weeks:  2
+  
+
+  tasks:
+  - name: Print cource details
+    debug:
+      msg: |
+        name: "{{cource}} : {{cource | type_debug}}
+
