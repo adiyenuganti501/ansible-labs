@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-   packages:
+    packages:
     - nginx
     - git 
     - mysql
@@ -14,6 +14,6 @@
     package:
       name: {{item}}
       state: present
-    loop: {{packages}}
+    loop: {{ packages }}
 
    
