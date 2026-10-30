@@ -12,6 +12,6 @@
   tasks:
   - name: Install All the packages
     package:
-     name: "{{item.name}}"
-     state: "{item.state}"
-    loop: "{{packages}}"
+     name: "{{ item.name }}"
+     state: "{ item.state }"
+    loop: "{{ packages }}"
