@@ -1,5 +1,5 @@
 - name: Loop Packages
-  shosts: local
+  hosts: local
   connection: local
   become: yes
   vars:
