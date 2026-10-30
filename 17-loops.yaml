@@ -1,0 +1,13 @@
+- name: Loop Packages
+  hosts: local
+  connection: local
+  tasks:
+  - name: Loop given packages
+    debug:
+      msg: "we can install {{ item }}"
+    loop:
+    - nginx
+    - git 
+    - mysql
+    - httpd
+    - hop
