@@ -2,10 +2,19 @@
   hosts: local
   connection: local
   tasks:
-  - name: Loop the given items
+  - name: Loop Names
     debug:
       msg: "Hi{{ item }}"
     loop:
     - Adinarayana
     - Khiranya Srini
     - Friya
+  - name: Loop Nums
+    debug:
+      msg: "This is { item }"
+    loop:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
