@@ -1,14 +1,14 @@
-- name: Install packages 
-  hosts: local
+- name: install packages 
+  shosts: local
   connection: local
   become: yes
   vars:
   packages:
-  - {name: nginx, state : absent}
-  - {name: git , state : absent}
-  - {name: mysql, state: present}
-  - {name: net-tools, state: absent}
-  - {name: htop, state: present}
+  - { name: nginx, state : absent }
+  - { name: git , state : absent }
+  - { name: mysql, state: present }
+  - { name: net-tools, state: absent }
+  - { name: htop, state: present }
   tasks:
   - name: Install All the packages
     package:
