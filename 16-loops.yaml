@@ -1,0 +1,11 @@
+- name: Loops in Ansible
+  hosts: local
+  connection: local
+  tasks:
+  - name: Loop the given items
+    debug:
+      msg: "Hi{{ item }}"
+    loop:
+    - Adinarayana
+    - Khiranya Srini
+    - Friya
