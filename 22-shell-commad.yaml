@@ -14,7 +14,8 @@
       msg: "{{ ec2_user_output }}"
 
   - name: redirect log files
-    command: ls -la >> /tmp/file.txt
+    # command: ls -la >> /tmp/file.txt
+    shell: ls -la >> /tmp/file.txt
     register: log_file_output
 
   - name: Print log_file_output
