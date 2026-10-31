@@ -5,9 +5,9 @@
   vars:
     topics: linux, shell, ansible, terraform, docker, AWS, k8s
     names:
-    - Adinarayana
+    - Khiranya
+    - Srini
     - Yenuganti
-    - khiranya
  
   tasks:
     - name: Print name
@@ -17,4 +17,9 @@
     - name: Convert strig to list
       debug:
         msg: "Topics are: {{ topics | split(',') | trim }}"
+    
+    - name: List to string join
+      debug:
+        msg: "Get full name {{ names | join }}"
+
 
