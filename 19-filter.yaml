@@ -1,0 +1,9 @@
+- name: Ansible Filters
+  hosts: local
+  connection: local
+  become: yes
+ 
+  tasks:
+    - name: Print name
+      debug:
+        msg: "Hi {{ person_name }}"
