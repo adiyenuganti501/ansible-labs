@@ -8,6 +8,6 @@
       name: roboshop
       register: roboshop_user
 
-  - name: print roboshop user details
-    debug:
-      msg: "{{roboshop_user}}"
+  # - name: print roboshop user details
+  #   debug:
+  #     msg: "{{roboshop_user}}"
