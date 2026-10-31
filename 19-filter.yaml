@@ -3,7 +3,7 @@
   connection: local
   become: yes
   vars:
-    topics: "linux, shell, ansible, terraform, docker, AWS, k8s"
+    topics: linux, shell, ansible, terraform, docker, AWS, k8s
     names:
     - Adinarayana
     - Yenuganti
