@@ -20,6 +20,6 @@
     
     - name: List to string join
       debug:
-        msg: "Get full name {{ names | join }}"
+        msg: "Get full name {{ names | join(' ') }}"
 
 
