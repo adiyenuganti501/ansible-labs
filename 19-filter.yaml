@@ -2,8 +2,19 @@
   hosts: local
   connection: local
   become: yes
+  vars:
+    topics: "linux, shell, ansible, terraform, docker, AWS, k8s"
+    names:
+    - Adinarayana
+    - Yenuganti
+    - khiranya
  
   tasks:
     - name: Print name
       debug:
         msg: "Hi {{ person_name | default('Khiranya') }}"
+
+    - name: Convert strig to list
+      debug:
+        msg: "Topics are {{ topics | split(,)}}"
+
