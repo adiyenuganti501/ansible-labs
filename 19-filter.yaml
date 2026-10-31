@@ -9,6 +9,7 @@
     - Srini
     - Yenuganti
     topic: TERRAFORM 
+    duration: "4"
  
   tasks:
     - name: Print name
@@ -26,5 +27,9 @@
     - name: Convert to lower-case
       debug: 
         msg: "toipc :  {{ topic | lower }}"
+
+    - name: Convert string to list
+      debug:
+        msg: "{{duration}} Hrs"
 
 
