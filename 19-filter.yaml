@@ -16,5 +16,5 @@
 
     - name: Convert strig to list
       debug:
-        msg: "Topics are {{ topics | split('','') }}"
+        msg: "Topics are: {{ topics | split(',') }}"
 
