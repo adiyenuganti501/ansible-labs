@@ -12,3 +12,11 @@
   - name: Print ec2_user_output
     debug:
       msg: "{{ ec2_user_output }}"
+
+  - name: redirect log files
+    command: ls -la >> /tmp/file.txt
+    register: log_file_output
+
+  - name: Print log_file_output
+    debug: 
+      msg: "{{log_file_output}}"
