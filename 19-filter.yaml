@@ -25,6 +25,6 @@
 
     - name: Convert to lower-case
       debug: 
-        msg: "toipc {{ topic | lower }}"
+        msg: "toipc :  {{ topic | lower }}"
 
 
